@@ -12,3 +12,7 @@ $ cd php-apps
 $ docker-compose up -d
 
 ```
+
+# Open the browser
+
+localhost/info.php
