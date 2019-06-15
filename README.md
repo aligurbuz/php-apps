@@ -24,5 +24,6 @@ $ docker-compose up -d
 - [Nginx:latest]()
 - [Redis]()
 - [Mongodb]() 
+- [Soap]() 
 - [Composer]() 
 - [Git]()
