@@ -16,3 +16,11 @@ $ docker-compose up -d
 # Open the browser
 
 > localhost/info.php
+
+# What are the features of the repository
+
+- [Php:7.3.6+Fpm]()
+- [Mysql:5.7]()
+- [Nginx:latest]()
+- [Redis]()
+- [Mongodb]()
