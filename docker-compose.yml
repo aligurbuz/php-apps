@@ -39,6 +39,7 @@ services:
         restart: always
         volumes:
         - ./app:/var/www/html/app
+        - ./server/bashes/laravel.sh:/var/www/html/laravel.sh
     mongo:
         container_name: mongo-resta
         image: mongo
