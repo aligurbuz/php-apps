@@ -7,8 +7,8 @@ You can run and manage your php applications. All you have to do is have a compu
 # Installation
 
 ```bash
-$ git clone https://github.com/aligurbuz/php-apps.git docker
-$ cd docker
+$ git clone https://github.com/aligurbuz/php-apps.git
+$ cd php-apps
 $ docker-compose up -d
 
 ```
