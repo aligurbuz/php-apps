@@ -15,4 +15,4 @@ $ docker-compose up -d
 
 # Open the browser
 
-localhost/info.php
+> localhost/info.php
