@@ -18,6 +18,7 @@ RUN apt-get update \
         libxml2-dev \
     && apt-get clean -y \
     && docker-php-ext-install soap
+    && apt-get install -y supervisor
 RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN cd ~
