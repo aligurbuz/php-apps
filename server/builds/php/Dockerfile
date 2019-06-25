@@ -17,7 +17,10 @@ RUN apt-get update \
         libcurl4-openssl-dev \
         libxml2-dev \
     && apt-get clean -y \
-    && docker-php-ext-install soap
+    && docker-php-ext-install soap \
+    && apt-get install -y zip libzip-dev \
+    && docker-php-ext-configure zip --with-libzip \
+    && docker-php-ext-install zip
     && apt-get install -y supervisor
 RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
