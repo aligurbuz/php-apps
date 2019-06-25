@@ -20,7 +20,7 @@ RUN apt-get update \
     && docker-php-ext-install soap \
     && apt-get install -y zip libzip-dev \
     && docker-php-ext-configure zip --with-libzip \
-    && docker-php-ext-install zip
+    && docker-php-ext-install zip \
     && apt-get install -y supervisor
 RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
