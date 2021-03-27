@@ -19,8 +19,8 @@ $ docker-compose up -d
 
 # What are the features of the repository
 
-- [Php:7.3.6+Fpm]()
-- [Mysql:5.7]()
+- [Php:8.0+Fpm]()
+- [Mysql:8.0]()
 - [Nginx:latest]()
 - [Redis]()
 - [Mongodb]() 
