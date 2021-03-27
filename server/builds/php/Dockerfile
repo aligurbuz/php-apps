@@ -1,4 +1,4 @@
-FROM php:7.3.6-fpm
+FROM php:8.0-fpm
 
 RUN docker-php-ext-install pdo_mysql
 
@@ -19,7 +19,6 @@ RUN apt-get update \
     && apt-get clean -y \
     && docker-php-ext-install soap \
     && apt-get install -y zip libzip-dev \
-    && docker-php-ext-configure zip --with-libzip \
     && docker-php-ext-install zip \
     && apt-get install -y supervisor
 RUN pecl install mongodb
