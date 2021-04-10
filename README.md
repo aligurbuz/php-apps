@@ -2,7 +2,7 @@
 You can find all the requirements you can use for your php applications in this repo.
 You can run and manage your php applications. All you have to do is have a computer with the docker loaded.
 
-![alt text](https://opsnotice.xyz/content/images/2016/07/banner_lemp1-1.png)
+![alt text](https://miro.medium.com/max/2776/1*ziYdfrwHY1rdy0IhMfkXtw.png)
 
 # Installation
 
