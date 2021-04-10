@@ -21,6 +21,10 @@ RUN apt-get update \
     && apt-get install -y zip libzip-dev \
     && docker-php-ext-install zip \
     && apt-get install -y supervisor
+
+RUN apt-get update && apt-get install -y libpq-dev
+RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
+RUN docker-php-ext-install pdo pdo_pgsql
 RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN cd ~
