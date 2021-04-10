@@ -38,7 +38,7 @@ Go to server/volumes/nginx.conf and then add the following code:
 ```bash
 location /yourProject {
     try_files $uri $uri/ /yourProject/public/index.php$is_args$args;
-    }
+}
 
 ```
 Then;
