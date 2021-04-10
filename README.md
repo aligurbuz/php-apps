@@ -22,7 +22,7 @@ $ docker-compose up -d
 - [Php:8.0+Fpm]()
 - [Mysql:8.0]()
 - [Nginx:latest]()
-- [ElasticSearch:latest]()
+- [ElasticSearch:7.2.0]()
 - [Redis]()
 - [Mongodb]() 
 - [Soap]() 
