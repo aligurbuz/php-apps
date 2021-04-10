@@ -54,6 +54,11 @@ localhost/yourProject/public/
 
 ```
 
+# What does it have as a database?
+There are 2 powerful databases that you can use as a relational database.Postgresql is loaded with the latest tag.
+Nosql, which you can use in Mongodb, comes loaded as data storage.
+![alt text](https://s3.amazonaws.com/download.retrospect.com/site/blog/database_protection_778.jpg)
+
 # What are the features of the repository
 
 - [Php:8.0+Fpm]()
