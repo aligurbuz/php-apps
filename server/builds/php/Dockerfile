@@ -22,6 +22,7 @@ RUN apt-get update \
     && docker-php-ext-install zip \
     && apt-get install -y supervisor
 
+RUN apt-get install -y cron
 RUN apt-get update && apt-get install -y libpq-dev
 RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
 RUN docker-php-ext-install pdo pdo_pgsql
