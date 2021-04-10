@@ -26,6 +26,7 @@ $ git clone https://github.com/laravel/laravel.git yourProject
 $ cd yourProject
 $ composer install
 $ mv .env.example .env
+$ php artisan key:generate
 $ sudo chmod -R 777 storage
 $ exit (leave from the container)
 
