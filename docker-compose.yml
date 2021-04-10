@@ -32,6 +32,21 @@ services:
         networks:
           default:
             ipv4_address: 172.10.0.5
+    postgres:
+        container_name: postgres-app
+        image: postgres:latest
+        environment:
+            POSTGRES_USER: ${POSTGRES_USER:-postgres}
+            POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+            PGDATA: /data/postgres
+        volumes:
+            - ./server/volumes/postgres:/data/postgres
+        ports:
+            - "5432:5432"
+        networks:
+            default:
+                ipv4_address: 172.10.0.8
+        restart: unless-stopped
     php:
         container_name: php-app
         build: server/builds/php
