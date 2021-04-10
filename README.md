@@ -58,6 +58,7 @@ localhost/yourProject/public/
 
 - [Php:8.0+Fpm]()
 - [Mysql:8.0]()
+- [Postgresql:latest]()
 - [Nginx:latest]()
 - [ElasticSearch:7.2.0]()
 - [Redis]()
