@@ -70,6 +70,7 @@ services:
         container_name: cassandra-app
         ports:
             - '7000:7000'
+            - '9042:9042'
         volumes:
             - ./server/volumes/cassandra:/data/cassandra
         networks:
