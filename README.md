@@ -41,6 +41,13 @@ location /yourProject {
     }
 
 ```
+Then;
+
+```bash
+docker exec nginx-app nginx -s reload
+
+```
+
 # Ready Your Laravel Application (Go to browser)
 ```bash
 localhost/yourProject/public/
