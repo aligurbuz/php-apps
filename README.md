@@ -17,11 +17,49 @@ $ docker-compose up -d
 
 > localhost/info.php
 
+
+# Laravel Installation
+
+```bash
+$ docker exec -it php-app /bin/bash
+$ git clone https://github.com/laravel/laravel.git yourProject
+$ cd yourProject
+$ composer install
+$ mv .env.example .env
+$ php artisan key:generate
+$ sudo chmod -R 777 storage
+$ exit (leave from the container)
+
+```
+
+# Laravel Nginx Set up
+Go to server/volumes/nginx.conf and then add the following code:
+
+```bash
+location /yourProject {
+    try_files $uri $uri/ /yourProject/public/index.php$is_args$args;
+    }
+
+```
+Then;
+
+```bash
+docker restart nginx-app
+
+```
+
+# Ready Your Laravel Application (Go to browser)
+```bash
+localhost/yourProject/public/
+
+```
+
 # What are the features of the repository
 
 - [Php:8.0+Fpm]()
 - [Mysql:8.0]()
 - [Nginx:latest]()
+- [ElasticSearch:7.2.0]()
 - [Redis]()
 - [Mongodb]() 
 - [Soap]() 
