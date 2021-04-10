@@ -65,6 +65,21 @@ services:
         networks:
           default:
             ipv4_address: 172.10.0.7
+    cassandra:
+        image: docker.io/bitnami/cassandra:latest
+        container_name: cassandra-app
+        ports:
+            - '7000:7000'
+        volumes:
+            - ./server/volumes/cassandra:/data/cassandra
+        networks:
+            default:
+                ipv4_address: 172.10.0.9
+        environment:
+            - CASSANDRA_SEEDS=cassandra
+            - CASSANDRA_PASSWORD_SEEDER=yes
+            - CASSANDRA_PASSWORD=cassandra
+            - CASSANDRA_USER=cassandra
     elasticsearch:
         image: docker.elastic.co/elasticsearch/elasticsearch:7.2.0
         volumes:
