@@ -17,7 +17,7 @@ $ docker-compose up -d
 
 > localhost/info.php
 
-
+>
 
 ![alt text](https://laravel.com/img/logotype.min.svg)
 
