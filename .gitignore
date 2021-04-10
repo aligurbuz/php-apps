@@ -3,3 +3,4 @@
 server/volumes/mysql/*
 server/volumes/mongo/*
 server/volumes/elasticsearch/*
+server/volumes/postgres/*
