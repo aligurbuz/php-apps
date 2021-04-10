@@ -44,7 +44,7 @@ location /yourProject {
 Then;
 
 ```bash
-docker exec nginx-app nginx -s reload
+docker restart nginx-app
 
 ```
 
