@@ -57,7 +57,8 @@ localhost/yourProject/public/
 # What does it have as a database?
 There are 2 powerful databases that you can use as a relational database.Postgresql is loaded with the latest tag.
 Mysql database 8.0 is installed.
-![alt text](https://i.ibb.co/cLgZwKM/mysql-vs-postgresql.jpg)
+
+![alt text](https://i.ibb.co/gdKJtxs/Postgresqlvs-Mysqljpg1559294630.jpg)
 
 # What does it have as a Nosql?
 Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster
