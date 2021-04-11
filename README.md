@@ -58,6 +58,14 @@ localhost/yourProject/public/
 There are 2 powerful databases that you can use as a relational database.Postgresql is loaded with the latest tag.
 Mysql database 8.0 is installed.
 ![alt text](https://i.ibb.co/cLgZwKM/mysql-vs-postgresql.jpg)
+
+# What does it have as a Nosql?
+Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster
+
+MongoDB is a document database, which means it stores data in JSON-like documents. We believe this is the most natural way to think about data, and is much more expressive and powerful than the traditional row/column model.
+
+![alt text](https://i.ibb.co/KFVXCT1/redis-VS-Mongo-DB.jpg)
+
 # What are the features of the repository
 
 - [Php:8.0+Fpm]()
