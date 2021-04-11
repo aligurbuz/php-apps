@@ -10,3 +10,5 @@ server/volumes/postgres/*
 !important server/volumes/postgres/postgres.html
 server/volumes/rabbitmq/*
 !important server/volumes/rabbitmq/rabbitmq.html
+app/*
+!important app/info.php
