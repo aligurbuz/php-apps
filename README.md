@@ -67,6 +67,12 @@ MongoDB is a document database, which means it stores data in JSON-like document
 
 ![alt text](https://i.ibb.co/KFVXCT1/redis-VS-Mongo-DB.jpg)
 
+# Elasticsearch support for full text searching
+
+Elasticsearch is a distributed, RESTful search and analytics engine capable of addressing a growing number of use cases. As the heart of the Elastic Stack, it centrally stores your data for lightning fast search, fine‑tuned relevancy, and powerful analytics that scale with ease.
+
+![alt text](https://i.ibb.co/kqQmJVB/0-ce-Q35-Icjg-Ec-Qf-Rm9.jpg)
+
 # What are the features of the repository
 
 - [Php:8.0+Fpm]()
