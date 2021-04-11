@@ -1,14 +1,9 @@
 .idea/
 .DS_Store
 server/volumes/mysql/*
-!important server/volumes/mysql/mysql.html
 server/volumes/mongo/*
-!important server/volumes/mongo/mongo.html
 server/volumes/elasticsearch/*
-!important server/volumes/elasticsearch/elasticsearch.html
 server/volumes/postgres/*
-!important server/volumes/postgres/postgres.html
 server/volumes/rabbitmq/*
-!important server/volumes/rabbitmq/rabbitmq.html
 app/*
 !important app/info.php
