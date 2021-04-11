@@ -73,6 +73,15 @@ Elasticsearch is a distributed, RESTful search and analytics engine capable of a
 
 ![alt text](https://i.ibb.co/kqQmJVB/0-ce-Q35-Icjg-Ec-Qf-Rm9.jpg)
 
+# RabbitMQ for queue workings
+
+RabbitMQ is the most widely deployed open source message broker.
+With tens of thousands of users, RabbitMQ is one of the most popular open source message brokers. From T-Mobile to Runtastic, RabbitMQ is used worldwide at small startups and large enterprises.
+
+RabbitMQ is lightweight and easy to deploy on premises and in the cloud. It supports multiple messaging protocols. RabbitMQ can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
+
+![alt text](https://i.ibb.co/mJ1HT88/1-ukn-Qn-Nbh-DFy-Tt-Hi-OIx-P4-Dw.png)
+
 # What are the features of the repository
 
 - [Php:8.0+Fpm]()
