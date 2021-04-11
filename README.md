@@ -67,6 +67,7 @@ Nosql, which you can use in Mongodb, comes loaded as data storage.
 - [PostgreSQL:latest]()
 - [Nginx:latest]()
 - [ElasticSearch:7.2.0]()
+- [RabbitMQ:3]()
 - [Redis]()
 - [Mongodb]() 
 - [Soap]() 

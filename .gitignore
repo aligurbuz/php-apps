@@ -4,5 +4,6 @@ server/volumes/mysql/*
 server/volumes/mongo/*
 server/volumes/elasticsearch/*
 server/volumes/postgres/*
+server/volumes/rabbitmq/*
 app/*
 !important app/info.php
