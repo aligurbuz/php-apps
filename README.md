@@ -57,7 +57,6 @@ localhost/yourProject/public/
 # What does it have as a database?
 There are 2 powerful databases that you can use as a relational database.Postgresql is loaded with the latest tag.
 Mysql database 8.0 is installed.
-Nosql, which you can use in Mongodb, comes loaded as data storage.
 ![alt text](https://i.ibb.co/cLgZwKM/mysql-vs-postgresql.jpg)
 # What are the features of the repository
 
