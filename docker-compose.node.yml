@@ -1,6 +1,6 @@
 version: '3'
 services:
-    web:
+    node:
         build: server/builds/node
         container_name: node-app
         volumes:
