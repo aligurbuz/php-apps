@@ -5,6 +5,7 @@
 ###
 # get project name from input
 project_name=${PWD}/app
+app_name=api
 
 
 ###
@@ -37,9 +38,9 @@ fi
 
 cd ${project_name}
 
-${git} clone https://github.com/aligurbuz/laravel-api.git api
+${git} clone https://github.com/aligurbuz/laravel-api.git ${app_name}
 
-cd ${project_name}/api
+cd ${project_name}/${app_name}
 ${composer} install
 chmod -R 777 storage
 mv .env.example .env
