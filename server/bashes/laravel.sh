@@ -7,6 +7,11 @@
 project_name=${PWD}/app
 app_name=api
 
+FILE=${project_name}/${app_name}/artisan
+if [ -f "$FILE" ]; then
+    echo "application already exists."
+    exit
+fi
 
 ###
 # check enviroments
