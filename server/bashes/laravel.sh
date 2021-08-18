@@ -37,4 +37,12 @@ fi
 
 cd ${project_name}
 
-${git} clone https://github.com/laravel/laravel.git
+${git} clone https://github.com/aligurbuz/laravel-api.git api
+
+cd ${project_name}/api
+${composer} install
+chmod -R 777 storage
+mv .env.example .env
+php artisan key:generate
+php artisan migrate
+php artisan passport:install
