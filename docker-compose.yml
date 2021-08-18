@@ -30,6 +30,7 @@ services:
         restart: always
         environment:
             MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE : api
         networks:
           default:
             ipv4_address: 172.10.0.5
