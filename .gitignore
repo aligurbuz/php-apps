@@ -5,6 +5,4 @@ server/volumes/mongo/*
 server/volumes/elasticsearch/*
 server/volumes/postgres/*
 server/volumes/rabbitmq/*
-app/*
 node/node_modules
-!important app/info.php
