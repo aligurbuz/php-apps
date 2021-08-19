@@ -47,8 +47,3 @@ ${git} clone https://github.com/aligurbuz/laravel-api.git ${app_name}
 
 cd ${project_name}/${app_name}
 ${composer} install
-chmod -R 777 storage
-mv .env.example .env
-php artisan key:generate
-php artisan migrate
-php artisan passport:install
