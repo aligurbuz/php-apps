@@ -6,3 +6,6 @@ server/volumes/elasticsearch/*
 server/volumes/postgres/*
 server/volumes/rabbitmq/*
 node/node_modules
+app/*
+!important app/info.php
+!important app/application.php
