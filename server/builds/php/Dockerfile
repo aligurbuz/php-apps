@@ -29,6 +29,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd
 
+RUN apt-get install -y librdkafka-dev && pecl install rdkafka
+RUN echo "extension=rdkafka.so" >> /usr/local/etc/php/conf.d/rdkafka.ini
 RUN apt-get install -y cron
 RUN apt-get update && apt-get install -y libpq-dev
 RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
