@@ -1,0 +1,25 @@
+version: '3'
+services:
+    mysql:
+        container_name: mysql-app
+        platform: linux/x86_64
+        image: mysql:latest
+        ports:
+        - "33061:3306"
+        - "3306:3306"
+        volumes:
+        - ./server/volumes/mysql:/var/lib/mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE : api
+        networks:
+          default:
+            ipv4_address: 172.10.0.5
+networks:
+  default:
+      driver: bridge
+      ipam:
+        config:
+            - subnet: 172.10.0.0/24
+

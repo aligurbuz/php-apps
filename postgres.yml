@@ -1,0 +1,24 @@
+version: '3'
+services:
+    postgres:
+        container_name: postgres-app
+        image: postgres:latest
+        environment:
+            POSTGRES_USER: 'postgres'
+            POSTGRES_PASSWORD: 'postgres'
+            PGDATA: /data/postgres
+        volumes:
+            - ./server/volumes/postgres:/data/postgres
+        ports:
+            - "5432:5432"
+        networks:
+            default:
+                ipv4_address: 172.10.0.19
+        restart: unless-stopped
+networks:
+  default:
+      driver: bridge
+      ipam:
+        config:
+            - subnet: 172.10.0.0/24
+

@@ -1,0 +1,19 @@
+version: '3'
+services:
+    mongo:
+        container_name: mongo-resta
+        image: mongo
+        ports:
+          - "27017:27017"
+        volumes:
+          - ./server/volumes/mongo:/data/db
+        networks:
+          default:
+            ipv4_address: 172.10.0.7
+networks:
+  default:
+      driver: bridge
+      ipam:
+        config:
+            - subnet: 172.10.0.0/24
+
