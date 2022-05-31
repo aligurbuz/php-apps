@@ -1,4 +1,4 @@
-FROM php:8.0-fpm
+FROM php:8.1-fpm
 
 RUN docker-php-ext-install pdo_mysql
 
@@ -49,5 +49,5 @@ RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN docker-php-ext-configure intl && docker-php-ext-install intl
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
+RUN docker-php-ext-install sockets
 RUN echo 'cd /var/www/html/app' >> ~/.bashrc
