@@ -11,7 +11,7 @@ $ git clone https://github.com/aligurbuz/php-apps.git
 $ cd php-apps
 
 // you can include your desired yml files with the -f parameter.
-$ docker-compose -f php.yml -f mysql.yml -f redis.yml up -d
+$ docker-compose -f nginx.yml -f php.yml -f mysql.yml -f redis.yml up -d
 
 ```
 
