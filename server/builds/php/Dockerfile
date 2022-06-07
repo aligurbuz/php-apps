@@ -50,4 +50,10 @@ RUN docker-php-ext-configure intl && docker-php-ext-install intl
 RUN cd ~
 RUN sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 RUN docker-php-ext-install sockets
+RUN apt-get install -y libgmp-dev re2c libmhash-dev libmcrypt-dev file
+RUN ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/local/include/
+RUN docker-php-ext-configure gmp
+RUN docker-php-ext-install gmp
+RUN echo "extension=gmp.so" >> /usr/local/etc/php/conf.d/gmp.ini
+RUN docker-php-ext-install bcmath
 RUN echo 'cd /var/www/html/app' >> ~/.bashrc
