@@ -1,0 +1,16 @@
+version: '3'
+services:
+    phpmyadmin:
+        image: phpmyadmin
+        restart: always
+        ports:
+            - 9400:80
+        environment:
+            - PMA_ARBITRARY=1
+networks:
+  default:
+      driver: bridge
+      ipam:
+        config:
+            - subnet: 172.10.0.0/24
+
