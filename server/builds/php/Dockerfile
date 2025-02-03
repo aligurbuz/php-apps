@@ -29,21 +29,11 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) gd
 
-RUN ( \
-                cd /tmp \
-                && mkdir librdkafka \
-                && cd librdkafka \
-                && git clone https://github.com/edenhill/librdkafka.git . \
-                && ./configure \
-                && make \
-                && make install \
-            )
-RUN apt-get install -y librdkafka-dev && pecl install rdkafka
-RUN echo "extension=rdkafka.so" >> /usr/local/etc/php/conf.d/rdkafka.ini
 RUN apt-get install -y cron
 RUN apt-get update && apt-get install -y libpq-dev
 RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
 RUN docker-php-ext-install pdo pdo_pgsql
+RUN docker-php-ext-install pcntl
 RUN pecl install mongodb
 RUN echo "extension=mongodb.so" >> /usr/local/etc/php/conf.d/mongodb.ini
 RUN docker-php-ext-configure intl && docker-php-ext-install intl
